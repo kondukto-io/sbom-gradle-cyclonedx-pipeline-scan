@@ -1,0 +1,334 @@
+2023-12-12 17:04:10,131 org.owasp.dependencycheck.utils.Settings:983
+DEBUG - Setting: data.directory='/opt/homebrew/Cellar/dependency-check/8.4.0/libexec/data'
+2023-12-12 17:04:10,133 org.owasp.dependencycheck.utils.Settings:983
+DEBUG - Setting: analyzer.jar.enabled='true'
+2023-12-12 17:04:10,133 org.owasp.dependencycheck.utils.Settings:983
+DEBUG - Setting: analyzer.msbuildproject.enabled='true'
+2023-12-12 17:04:10,133 org.owasp.dependencycheck.utils.Settings:983
+DEBUG - Setting: analyzer.archive.enabled='true'
+2023-12-12 17:04:10,133 org.owasp.dependencycheck.utils.Settings:983
+DEBUG - Setting: analyzer.knownexploited.enabled='true'
+2023-12-12 17:04:10,134 org.owasp.dependencycheck.utils.Settings:983
+DEBUG - Setting: analyzer.python.distribution.enabled='true'
+2023-12-12 17:04:10,134 org.owasp.dependencycheck.utils.Settings:983
+DEBUG - Setting: analyzer.python.package.enabled='true'
+2023-12-12 17:04:10,134 org.owasp.dependencycheck.utils.Settings:983
+DEBUG - Setting: analyzer.autoconf.enabled='true'
+2023-12-12 17:04:10,134 org.owasp.dependencycheck.utils.Settings:983
+DEBUG - Setting: analyzer.maveninstall.enabled='true'
+2023-12-12 17:04:10,134 org.owasp.dependencycheck.utils.Settings:983
+DEBUG - Setting: analyzer.pip.enabled='true'
+2023-12-12 17:04:10,134 org.owasp.dependencycheck.utils.Settings:983
+DEBUG - Setting: analyzer.pipfile.enabled='true'
+2023-12-12 17:04:10,134 org.owasp.dependencycheck.utils.Settings:983
+DEBUG - Setting: analyzer.poetry.enabled='true'
+2023-12-12 17:04:10,134 org.owasp.dependencycheck.utils.Settings:983
+DEBUG - Setting: analyzer.cmake.enabled='true'
+2023-12-12 17:04:10,134 org.owasp.dependencycheck.utils.Settings:983
+DEBUG - Setting: analyzer.nuspec.enabled='true'
+2023-12-12 17:04:10,134 org.owasp.dependencycheck.utils.Settings:983
+DEBUG - Setting: analyzer.nugetconf.enabled='true'
+2023-12-12 17:04:10,134 org.owasp.dependencycheck.utils.Settings:983
+DEBUG - Setting: analyzer.assembly.enabled='true'
+2023-12-12 17:04:10,134 org.owasp.dependencycheck.utils.Settings:983
+DEBUG - Setting: analyzer.bundle.audit.enabled='true'
+2023-12-12 17:04:10,134 org.owasp.dependencycheck.utils.Settings:983
+DEBUG - Setting: analyzer.filename.enabled='true'
+2023-12-12 17:04:10,134 org.owasp.dependencycheck.utils.Settings:983
+DEBUG - Setting: analyzer.mix.audit.enabled='true'
+2023-12-12 17:04:10,135 org.owasp.dependencycheck.utils.Settings:983
+DEBUG - Setting: analyzer.openssl.enabled='true'
+2023-12-12 17:04:10,135 org.owasp.dependencycheck.utils.Settings:983
+DEBUG - Setting: analyzer.composer.lock.enabled='true'
+2023-12-12 17:04:10,135 org.owasp.dependencycheck.utils.Settings:983
+DEBUG - Setting: analyzer.cpanfile.enabled='true'
+2023-12-12 17:04:10,135 org.owasp.dependencycheck.utils.Settings:983
+DEBUG - Setting: analyzer.golang.dep.enabled='true'
+2023-12-12 17:04:10,135 org.owasp.dependencycheck.utils.Settings:983
+DEBUG - Setting: analyzer.golang.mod.enabled='true'
+2023-12-12 17:04:10,135 org.owasp.dependencycheck.utils.Settings:983
+DEBUG - Setting: analyzer.dart.enabled='true'
+2023-12-12 17:04:10,135 org.owasp.dependencycheck.utils.Settings:983
+DEBUG - Setting: analyzer.node.package.enabled='true'
+2023-12-12 17:04:10,135 org.owasp.dependencycheck.utils.Settings:983
+DEBUG - Setting: analyzer.node.audit.enabled='true'
+2023-12-12 17:04:10,135 org.owasp.dependencycheck.utils.Settings:983
+DEBUG - Setting: analyzer.yarn.audit.enabled='true'
+2023-12-12 17:04:10,135 org.owasp.dependencycheck.utils.Settings:983
+DEBUG - Setting: analyzer.pnpm.audit.enabled='true'
+2023-12-12 17:04:10,135 org.owasp.dependencycheck.utils.Settings:983
+DEBUG - Setting: analyzer.node.audit.use.cache='true'
+2023-12-12 17:04:10,135 org.owasp.dependencycheck.utils.Settings:983
+DEBUG - Setting: analyzer.retirejs.enabled='true'
+2023-12-12 17:04:10,135 org.owasp.dependencycheck.utils.Settings:983
+DEBUG - Setting: analyzer.swift.package.manager.enabled='true'
+2023-12-12 17:04:10,135 org.owasp.dependencycheck.utils.Settings:983
+DEBUG - Setting: analyzer.swift.package.resolved.enabled='true'
+2023-12-12 17:04:10,136 org.owasp.dependencycheck.utils.Settings:983
+DEBUG - Setting: analyzer.cocoapods.enabled='true'
+2023-12-12 17:04:10,136 org.owasp.dependencycheck.utils.Settings:983
+DEBUG - Setting: analyzer.ruby.gemspec.enabled='true'
+2023-12-12 17:04:10,136 org.owasp.dependencycheck.utils.Settings:983
+DEBUG - Setting: analyzer.central.enabled='true'
+2023-12-12 17:04:10,136 org.owasp.dependencycheck.utils.Settings:983
+DEBUG - Setting: analyzer.central.use.cache='true'
+2023-12-12 17:04:10,136 org.owasp.dependencycheck.utils.Settings:983
+DEBUG - Setting: analyzer.ossindex.enabled='true'
+2023-12-12 17:04:10,136 org.owasp.dependencycheck.utils.Settings:983
+DEBUG - Setting: analyzer.ossindex.use.cache='true'
+2023-12-12 17:04:10,136 org.owasp.dependencycheck.utils.Settings:983
+DEBUG - Setting: junit.fail.on.cvss='0.0'
+2023-12-12 17:04:10,136 org.owasp.dependencycheck.utils.Settings:983
+DEBUG - Setting: analyzer.nexus.proxy='true'
+2023-12-12 17:04:10,136 org.owasp.dependencycheck.utils.Settings:983
+DEBUG - Setting: hosted.suppressions.enabled='true'
+2023-12-12 17:04:10,137 org.owasp.dependencycheck.App:356
+DEBUG - Scanning /Users/alperenorsdemir/Desktop/Support/Activities-on-Cases/SBOM_Plugins_Perform/kotlin-petclinic-PLUGINS/kotlin-cyclone.json
+2023-12-12 17:04:10,140 org.owasp.dependencycheck.App:371
+DEBUG - BaseDir: /Users/alperenorsdemir/Desktop/Support/Activities-on-Cases/SBOM_Plugins_Perform/kotlin-petclinic-PLUGINS
+2023-12-12 17:04:10,140 org.owasp.dependencycheck.App:372
+DEBUG - Include: kotlin-cyclone.json
+2023-12-12 17:04:10,141 org.owasp.dependencycheck.App:390
+DEBUG - Found file /Users/alperenorsdemir/Desktop/Support/Activities-on-Cases/SBOM_Plugins_Perform/kotlin-petclinic-PLUGINS/kotlin-cyclone.json
+2023-12-12 17:04:10,147 org.owasp.dependencycheck.analyzer.AnalyzerService:113
+DEBUG - Loaded Analyzer Archive Analyzer
+2023-12-12 17:04:10,148 org.owasp.dependencycheck.analyzer.AnalyzerService:113
+DEBUG - Loaded Analyzer File Name Analyzer
+2023-12-12 17:04:10,154 org.owasp.dependencycheck.analyzer.AnalyzerService:113
+DEBUG - Loaded Analyzer Jar Analyzer
+2023-12-12 17:04:10,154 org.owasp.dependencycheck.analyzer.AnalyzerService:113
+DEBUG - Loaded Analyzer Hint Analyzer
+2023-12-12 17:04:10,158 org.owasp.dependencycheck.analyzer.AnalyzerService:113
+DEBUG - Loaded Analyzer CPE Analyzer
+2023-12-12 17:04:10,159 org.owasp.dependencycheck.analyzer.AnalyzerService:113
+DEBUG - Loaded Analyzer False Positive Analyzer
+2023-12-12 17:04:10,159 org.owasp.dependencycheck.analyzer.AnalyzerService:113
+DEBUG - Loaded Analyzer Dependency Bundling Analyzer
+2023-12-12 17:04:10,160 org.owasp.dependencycheck.analyzer.AnalyzerService:113
+DEBUG - Loaded Analyzer Dependency Merging Analyzer
+2023-12-12 17:04:10,160 org.owasp.dependencycheck.analyzer.AnalyzerService:113
+DEBUG - Loaded Analyzer NVD CVE Analyzer
+2023-12-12 17:04:10,161 org.owasp.dependencycheck.analyzer.AnalyzerService:113
+DEBUG - Loaded Analyzer Vulnerability Suppression Analyzer
+2023-12-12 17:04:10,161 org.owasp.dependencycheck.analyzer.AnalyzerService:113
+DEBUG - Loaded Analyzer Central Analyzer
+2023-12-12 17:04:10,161 org.owasp.dependencycheck.analyzer.AnalyzerService:113
+DEBUG - Loaded Analyzer Nexus Analyzer
+2023-12-12 17:04:10,162 org.owasp.dependencycheck.analyzer.AnalyzerService:113
+DEBUG - Loaded Analyzer Artifactory Analyzer
+2023-12-12 17:04:10,162 org.owasp.dependencycheck.analyzer.AnalyzerService:113
+DEBUG - Loaded Analyzer Nuspec Analyzer
+2023-12-12 17:04:10,162 org.owasp.dependencycheck.analyzer.AnalyzerService:113
+DEBUG - Loaded Analyzer Nugetconf Analyzer
+2023-12-12 17:04:10,163 org.owasp.dependencycheck.analyzer.AnalyzerService:113
+DEBUG - Loaded Analyzer MSBuild Project Analyzer
+2023-12-12 17:04:10,163 org.owasp.dependencycheck.analyzer.AnalyzerService:113
+DEBUG - Loaded Analyzer Assembly Analyzer
+2023-12-12 17:04:10,166 org.owasp.dependencycheck.analyzer.AnalyzerService:113
+DEBUG - Loaded Analyzer OpenSSL Source Analyzer
+2023-12-12 17:04:10,168 org.owasp.dependencycheck.analyzer.AnalyzerService:113
+DEBUG - Loaded Analyzer Node.js Package Analyzer
+2023-12-12 17:04:10,168 org.owasp.dependencycheck.analyzer.AnalyzerService:113
+DEBUG - Loaded Analyzer Node Audit Analyzer
+2023-12-12 17:04:10,168 org.owasp.dependencycheck.analyzer.AnalyzerService:113
+DEBUG - Loaded Analyzer Yarn Audit Analyzer
+2023-12-12 17:04:10,169 org.owasp.dependencycheck.analyzer.AnalyzerService:113
+DEBUG - Loaded Analyzer Pnpm Audit Analyzer
+2023-12-12 17:04:10,170 org.owasp.dependencycheck.analyzer.AnalyzerService:113
+DEBUG - Loaded Analyzer RetireJS Analyzer
+2023-12-12 17:04:10,171 org.owasp.dependencycheck.analyzer.AnalyzerService:113
+DEBUG - Loaded Analyzer Ruby Bundle Audit Analyzer
+2023-12-12 17:04:10,172 org.owasp.dependencycheck.analyzer.AnalyzerService:113
+DEBUG - Loaded Analyzer Version Filter Analyzer
+2023-12-12 17:04:10,173 org.owasp.dependencycheck.analyzer.AnalyzerService:113
+DEBUG - Loaded Analyzer Sonatype OSS Index Analyzer
+2023-12-12 17:04:10,192 org.owasp.dependencycheck.analyzer.AnalyzerService:113
+DEBUG - Loaded Analyzer Known Exploited Vulnerability Analyzer
+2023-12-12 17:04:10,192 org.owasp.dependencycheck.analyzer.AnalyzerService:113
+DEBUG - Loaded Analyzer Unused Suppression Rule Analyzer
+2023-12-12 17:04:10,192 org.owasp.dependencycheck.analyzer.AnalyzerService:113
+DEBUG - Loaded Analyzer Libman Analyzer
+2023-12-12 17:04:10,193 org.owasp.dependencycheck.utils.Settings:1184
+DEBUG - Settings.getDataFile() - file: '/opt/homebrew/Cellar/dependency-check/8.4.0/libexec/data'
+2023-12-12 17:04:10,301 org.owasp.dependencycheck.utils.Settings:1184
+DEBUG - Settings.getDataFile() - file: '/opt/homebrew/Cellar/dependency-check/8.4.0/libexec/data'
+2023-12-12 17:04:10,301 org.owasp.dependencycheck.utils.Settings:1441
+DEBUG - Data directory: /opt/homebrew/Cellar/dependency-check/8.4.0/libexec/data
+2023-12-12 17:04:10,301 org.owasp.dependencycheck.utils.Settings:1457
+DEBUG - Connection String: 'jdbc:h2:file:/opt/homebrew/var/dependencycheck/odc;AUTOCOMMIT=ON;CACHE_SIZE=65536;RETENTION_TIME=1000;MAX_COMPACT_TIME=10000;'
+2023-12-12 17:04:10,301 org.owasp.dependencycheck.utils.Settings:1184
+DEBUG - Settings.getDataFile() - file: '/opt/homebrew/Cellar/dependency-check/8.4.0/libexec/data'
+2023-12-12 17:04:10,331 org.owasp.dependencycheck.utils.WriteLock:168
+DEBUG - Lock file created (main) 6afc61b610d4974cc03e9d052a497966 @ 2023-12-12 17:04:10.331
+2023-12-12 17:04:10,335 org.owasp.dependencycheck.data.nvdcve.DatabaseManager:143
+DEBUG - Loading driver 'org.h2.Driver'
+2023-12-12 17:04:10,336 org.owasp.dependencycheck.utils.Settings:1184
+DEBUG - Settings.getDataFile() - file: '/opt/homebrew/Cellar/dependency-check/8.4.0/libexec/data'
+2023-12-12 17:04:10,336 org.owasp.dependencycheck.utils.Settings:1441
+DEBUG - Data directory: /opt/homebrew/Cellar/dependency-check/8.4.0/libexec/data
+2023-12-12 17:04:10,336 org.owasp.dependencycheck.utils.Settings:1457
+DEBUG - Connection String: 'jdbc:h2:file:/opt/homebrew/var/dependencycheck/odc;AUTOCOMMIT=ON;CACHE_SIZE=65536;RETENTION_TIME=1000;MAX_COMPACT_TIME=10000;'
+2023-12-12 17:04:10,336 org.owasp.dependencycheck.utils.Settings:1184
+DEBUG - Settings.getDataFile() - file: '/opt/homebrew/Cellar/dependency-check/8.4.0/libexec/data'
+2023-12-12 17:04:10,336 org.owasp.dependencycheck.data.nvdcve.DatabaseManager:172
+DEBUG - Need to create DB Structure: false
+2023-12-12 17:04:10,336 org.owasp.dependencycheck.data.nvdcve.DatabaseManager:178
+DEBUG - Loading database connection
+2023-12-12 17:04:10,336 org.owasp.dependencycheck.data.nvdcve.DatabaseManager:179
+DEBUG - Connection String: jdbc:h2:file:/opt/homebrew/var/dependencycheck/odc;AUTOCOMMIT=ON;CACHE_SIZE=65536;RETENTION_TIME=1000;MAX_COMPACT_TIME=10000;
+2023-12-12 17:04:10,336 org.owasp.dependencycheck.data.nvdcve.DatabaseManager:180
+DEBUG - Database User: dcuser
+2023-12-12 17:04:10,439 org.owasp.dependencycheck.data.nvdcve.DatabaseManager:241
+DEBUG - Database product: h2
+2023-12-12 17:04:10,447 org.owasp.dependencycheck.data.nvdcve.DatabaseManager:502
+DEBUG - DC Schema: 5.4
+2023-12-12 17:04:10,456 org.owasp.dependencycheck.data.nvdcve.DatabaseManager:503
+DEBUG - DB Schema: 5.4
+2023-12-12 17:04:10,508 org.owasp.dependencycheck.Engine:893
+INFO  - Checking for updates
+2023-12-12 17:04:10,510 org.owasp.dependencycheck.data.update.NvdCveUpdater:234
+INFO  - Skipping NVD check since last check was within 4 hours.
+2023-12-12 17:04:10,511 org.owasp.dependencycheck.data.update.NvdCveUpdater:235
+DEBUG - Last NVD was at 1702389717, and now 1702389850 is within 14400 s.
+2023-12-12 17:04:10,511 org.owasp.dependencycheck.data.update.EngineVersionCheck:134
+DEBUG - Begin Engine Version Check
+2023-12-12 17:04:10,511 org.owasp.dependencycheck.data.update.EngineVersionCheck:142
+DEBUG - Last checked: 1701692328
+2023-12-12 17:04:10,511 org.owasp.dependencycheck.data.update.EngineVersionCheck:143
+DEBUG - Now: 1702389850
+2023-12-12 17:04:10,511 org.owasp.dependencycheck.data.update.EngineVersionCheck:144
+DEBUG - Current version: 8.4.0
+2023-12-12 17:04:10,511 org.owasp.dependencycheck.data.update.EngineVersionCheck:200
+DEBUG - Upgrade not needed
+2023-12-12 17:04:10,512 org.owasp.dependencycheck.utils.Settings:1184
+DEBUG - Settings.getDataFile() - file: '/opt/homebrew/Cellar/dependency-check/8.4.0/libexec/data'
+2023-12-12 17:04:10,512 org.owasp.dependencycheck.data.update.RetireJSDataSource:114
+DEBUG - Last updated: 1702389725924
+2023-12-12 17:04:10,512 org.owasp.dependencycheck.data.update.RetireJSDataSource:115
+DEBUG - Now: 1702389850512
+2023-12-12 17:04:10,512 org.owasp.dependencycheck.data.update.RetireJSDataSource:119
+INFO  - Skipping RetireJS update since last update was within 24 hours.
+2023-12-12 17:04:10,512 org.owasp.dependencycheck.utils.Settings:1184
+DEBUG - Settings.getDataFile() - file: '/opt/homebrew/Cellar/dependency-check/8.4.0/libexec/data'
+2023-12-12 17:04:10,513 org.owasp.dependencycheck.data.update.HostedSuppressionsDataSource:107
+DEBUG - Last updated: 1702389726389
+2023-12-12 17:04:10,513 org.owasp.dependencycheck.data.update.HostedSuppressionsDataSource:108
+DEBUG - Now: 1702389850513
+2023-12-12 17:04:10,513 org.owasp.dependencycheck.data.update.HostedSuppressionsDataSource:112
+INFO  - Skipping Hosted Suppressions file update since last update was within 2 hours.
+2023-12-12 17:04:10,513 org.owasp.dependencycheck.data.update.KnownExploitedDataSource:77
+INFO  - Updating CISA Known Exploited Vulnerability list: https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json
+2023-12-12 17:04:10,514 org.owasp.dependencycheck.utils.HttpResourceConnection:200
+DEBUG - Attempting retrieval of https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json
+2023-12-12 17:04:10,584 org.owasp.dependencycheck.utils.SSLSocketFactoryEx:283
+DEBUG - Available Protocols:
+2023-12-12 17:04:10,584 org.owasp.dependencycheck.utils.SSLSocketFactoryEx:285
+DEBUG - SSLv2Hello
+2023-12-12 17:04:10,584 org.owasp.dependencycheck.utils.SSLSocketFactoryEx:285
+DEBUG - SSLv3
+2023-12-12 17:04:10,584 org.owasp.dependencycheck.utils.SSLSocketFactoryEx:285
+DEBUG - TLSv1
+2023-12-12 17:04:10,584 org.owasp.dependencycheck.utils.SSLSocketFactoryEx:285
+DEBUG - TLSv1.1
+2023-12-12 17:04:10,584 org.owasp.dependencycheck.utils.SSLSocketFactoryEx:285
+DEBUG - TLSv1.2
+2023-12-12 17:04:10,584 org.owasp.dependencycheck.utils.SSLSocketFactoryEx:285
+DEBUG - TLSv1.3
+2023-12-12 17:04:11,510 org.owasp.dependencycheck.utils.HttpResourceConnection:248
+ERROR - Error retrieving https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json; received response code 403; Forbidden
+2023-12-12 17:04:11,513 org.owasp.dependencycheck.Engine:905
+ERROR - org.owasp.dependencycheck.utils.DownloadFailedException: Error downloading file https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json; unable to connect.
+org.owasp.dependencycheck.data.update.exception.UpdateException: org.owasp.dependencycheck.utils.DownloadFailedException: Error downloading file https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json; unable to connect.
+	at org.owasp.dependencycheck.data.update.KnownExploitedDataSource.update(KnownExploitedDataSource.java:93)
+	at org.owasp.dependencycheck.Engine.doUpdates(Engine.java:902)
+	at org.owasp.dependencycheck.Engine.initializeAndUpdateDatabase(Engine.java:707)
+	at org.owasp.dependencycheck.Engine.analyzeDependencies(Engine.java:633)
+	at org.owasp.dependencycheck.App.runScan(App.java:259)
+	at org.owasp.dependencycheck.App.run(App.java:191)
+	at org.owasp.dependencycheck.App.main(App.java:86)
+Caused by: org.owasp.dependencycheck.utils.DownloadFailedException: Error downloading file https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json; unable to connect.
+	at org.owasp.dependencycheck.utils.HttpResourceConnection.obtainConnection(HttpResourceConnection.java:267)
+	at org.owasp.dependencycheck.utils.HttpResourceConnection.fetch(HttpResourceConnection.java:163)
+	at org.owasp.dependencycheck.data.update.KnownExploitedDataSource.update(KnownExploitedDataSource.java:80)
+	... 6 common frames omitted
+Caused by: org.owasp.dependencycheck.utils.DownloadFailedException: Error retrieving https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json; received response code 403; Forbidden
+	at org.owasp.dependencycheck.utils.HttpResourceConnection.obtainConnection(HttpResourceConnection.java:249)
+	... 8 common frames omitted
+2023-12-12 17:04:11,514 org.owasp.dependencycheck.data.nvdcve.CveDB:311
+DEBUG - Closing database
+2023-12-12 17:04:11,514 org.owasp.dependencycheck.data.nvdcve.CveDB:313
+DEBUG - Cache cleared
+2023-12-12 17:04:11,521 org.owasp.dependencycheck.data.nvdcve.CveDB:316
+DEBUG - Connection closed
+2023-12-12 17:04:11,521 org.owasp.dependencycheck.data.nvdcve.CveDB:322
+DEBUG - Resources released
+2023-12-12 17:04:11,521 org.owasp.dependencycheck.data.nvdcve.DriverLoader:57
+DEBUG - Begin deregister driver
+2023-12-12 17:04:11,522 org.owasp.dependencycheck.data.nvdcve.DriverLoader:59
+DEBUG - End deregister driver
+2023-12-12 17:04:11,525 org.owasp.dependencycheck.utils.WriteLock:240
+DEBUG - Lock released (main) 6afc61b610d4974cc03e9d052a497966 @ 2023-12-12 17:04:11.525
+2023-12-12 17:04:11,525 org.owasp.dependencycheck.Engine:710
+WARN  - Unable to update 1 or more Cached Web DataSource, using local data instead. Results may not include recent vulnerabilities.
+2023-12-12 17:04:11,526 org.owasp.dependencycheck.Engine:712
+DEBUG - Update Error
+org.owasp.dependencycheck.data.update.exception.UpdateException: org.owasp.dependencycheck.utils.DownloadFailedException: Error downloading file https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json; unable to connect.
+	at org.owasp.dependencycheck.data.update.KnownExploitedDataSource.update(KnownExploitedDataSource.java:93)
+	at org.owasp.dependencycheck.Engine.doUpdates(Engine.java:902)
+	at org.owasp.dependencycheck.Engine.initializeAndUpdateDatabase(Engine.java:707)
+	at org.owasp.dependencycheck.Engine.analyzeDependencies(Engine.java:633)
+	at org.owasp.dependencycheck.App.runScan(App.java:259)
+	at org.owasp.dependencycheck.App.run(App.java:191)
+	at org.owasp.dependencycheck.App.main(App.java:86)
+Caused by: org.owasp.dependencycheck.utils.DownloadFailedException: Error downloading file https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json; unable to connect.
+	at org.owasp.dependencycheck.utils.HttpResourceConnection.obtainConnection(HttpResourceConnection.java:267)
+	at org.owasp.dependencycheck.utils.HttpResourceConnection.fetch(HttpResourceConnection.java:163)
+	at org.owasp.dependencycheck.data.update.KnownExploitedDataSource.update(KnownExploitedDataSource.java:80)
+	... 6 common frames omitted
+Caused by: org.owasp.dependencycheck.utils.DownloadFailedException: Error retrieving https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json; received response code 403; Forbidden
+	at org.owasp.dependencycheck.utils.HttpResourceConnection.obtainConnection(HttpResourceConnection.java:249)
+	... 8 common frames omitted
+2023-12-12 17:04:11,526 org.owasp.dependencycheck.Engine:1174
+ERROR - Unable to continue dependency-check analysis.
+2023-12-12 17:04:11,526 org.owasp.dependencycheck.Engine:1175
+DEBUG - 
+org.owasp.dependencycheck.exception.NoDataException: No documents exist
+	at org.owasp.dependencycheck.Engine.ensureDataExists(Engine.java:1159)
+	at org.owasp.dependencycheck.Engine.analyzeDependencies(Engine.java:637)
+	at org.owasp.dependencycheck.App.runScan(App.java:259)
+	at org.owasp.dependencycheck.App.run(App.java:191)
+	at org.owasp.dependencycheck.App.main(App.java:86)
+2023-12-12 17:04:11,846 org.owasp.dependencycheck.App:207
+ERROR - One or more fatal errors occurred
+2023-12-12 17:04:11,847 org.owasp.dependencycheck.App:213
+ERROR - org.owasp.dependencycheck.utils.DownloadFailedException: Error downloading file https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json; unable to connect.
+2023-12-12 17:04:11,848 org.owasp.dependencycheck.App:214
+DEBUG - unexpected error
+org.owasp.dependencycheck.data.update.exception.UpdateException: org.owasp.dependencycheck.utils.DownloadFailedException: Error downloading file https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json; unable to connect.
+	at org.owasp.dependencycheck.data.update.KnownExploitedDataSource.update(KnownExploitedDataSource.java:93)
+	at org.owasp.dependencycheck.Engine.doUpdates(Engine.java:902)
+	at org.owasp.dependencycheck.Engine.initializeAndUpdateDatabase(Engine.java:707)
+	at org.owasp.dependencycheck.Engine.analyzeDependencies(Engine.java:633)
+	at org.owasp.dependencycheck.App.runScan(App.java:259)
+	at org.owasp.dependencycheck.App.run(App.java:191)
+	at org.owasp.dependencycheck.App.main(App.java:86)
+Caused by: org.owasp.dependencycheck.utils.DownloadFailedException: Error downloading file https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json; unable to connect.
+	at org.owasp.dependencycheck.utils.HttpResourceConnection.obtainConnection(HttpResourceConnection.java:267)
+	at org.owasp.dependencycheck.utils.HttpResourceConnection.fetch(HttpResourceConnection.java:163)
+	at org.owasp.dependencycheck.data.update.KnownExploitedDataSource.update(KnownExploitedDataSource.java:80)
+	... 6 common frames omitted
+Caused by: org.owasp.dependencycheck.utils.DownloadFailedException: Error retrieving https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json; received response code 403; Forbidden
+	at org.owasp.dependencycheck.utils.HttpResourceConnection.obtainConnection(HttpResourceConnection.java:249)
+	... 8 common frames omitted
+2023-12-12 17:04:11,848 org.owasp.dependencycheck.App:213
+ERROR - No documents exist
+2023-12-12 17:04:11,848 org.owasp.dependencycheck.App:214
+DEBUG - unexpected error
+org.owasp.dependencycheck.exception.NoDataException: No documents exist
+	at org.owasp.dependencycheck.Engine.ensureDataExists(Engine.java:1159)
+	at org.owasp.dependencycheck.Engine.analyzeDependencies(Engine.java:637)
+	at org.owasp.dependencycheck.App.runScan(App.java:259)
+	at org.owasp.dependencycheck.App.run(App.java:191)
+	at org.owasp.dependencycheck.App.main(App.java:86)
+2023-12-12 17:04:11,848 org.owasp.dependencycheck.App:87
+DEBUG - Exit code: 13
