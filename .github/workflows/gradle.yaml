@@ -19,9 +19,11 @@ jobs:
           distribution: 'temurin'
           cache: gradle
       
-      - name: Set up Gradle Wrapper
-        run: chmod +x ./gradlew
-
+      - name: Set up Gradle Wrapper& get syft
+        run: |
+          chmod +x ./gradlew
+          ls ../
+          apt-get install syft
       - name: Setup KDT
         run: |
           curl -sSL https://cli.kondukto.io | sh
@@ -29,10 +31,13 @@ jobs:
           echo "KONDUKTO_TOKEN=${{ secrets.KONDUKTO_TOKEN }}" >> $GITHUB_ENV
 
       - name: Build-Gradle
-        run: ./gradlew build
+        run: |
+          ./gradlew build
+          syft ../sbom-gradle-cyclonedx-pipeline-scan -o cyclonedx-json --file kotlin-cyclonedx.json
       - name: import-SBOM&osv-scan
         run: |
           kdt sbom import -p kotlin-petclinic -b main -f kotlin-cyclone.json
           kdt scan -p kotlin-petclinic -t osvscannersca -b main -f osv-scanner-result.json
+          kdt sbom import -p kotlin-petclinic -b main -f kotlin-cyclonedx.json
       
       
