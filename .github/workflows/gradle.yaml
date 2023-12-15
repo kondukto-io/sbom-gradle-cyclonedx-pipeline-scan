@@ -30,7 +30,7 @@ jobs:
           echo "KONDUKTO_HOST=${{ secrets.KONDUKTO_HOST }}" >> $GITHUB_ENV
           echo "KONDUKTO_TOKEN=${{ secrets.KONDUKTO_TOKEN }}" >> $GITHUB_ENV
 
-      - name: Build-Gradle
+      - name: Build-Gradle&GenerateSBOM-withSyft
         run: |
           ./gradlew build
           syft ../sbom-gradle-cyclonedx-pipeline-scan -o cyclonedx-json --file kotlin-cyclonedx.json
