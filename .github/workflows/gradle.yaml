@@ -36,7 +36,7 @@ jobs:
           syft ../sbom-gradle-cyclonedx-pipeline-scan -o cyclonedx-json --file kotlin-cyclonedx.json
       - name: import-SBOM&osv-scan
         run: |
-          kdt sbom import -p kotlin-petclinic -b main -f kotlin-cyclone.json
+          
           kdt scan -p kotlin-petclinic -t osvscannersca -b main -f osv-scanner-result.json
           kdt sbom import -p kotlin-petclinic -b main -f kotlin-cyclonedx.json
       
