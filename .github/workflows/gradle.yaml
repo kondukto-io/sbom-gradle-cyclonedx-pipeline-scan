@@ -23,7 +23,7 @@ jobs:
         run: |
           chmod +x ./gradlew
           ls ../
-          sudo apt-get install syft
+          curl -sSfL https://raw.githubusercontent.com/anchore/syft/main/install.sh | sh -s -- -b /usr/local/bin
       - name: Setup KDT
         run: |
           curl -sSL https://cli.kondukto.io | sh
