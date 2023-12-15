@@ -1,0 +1,38 @@
+name: kdtGradlePipeline
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: updateJavaSDK
+        uses: actions/setup-java@v3
+        with: 
+          java-version: '17'
+          distribution: 'temurin'
+          cache: gradle
+      
+      - name: Set up Gradle Wrapper
+        run: chmod +x ./gradlew
+
+      - name: Setup KDT
+        run: |
+          curl -sSL https://cli.kondukto.io | sh
+          echo "KONDUKTO_HOST=${{ secrets.KONDUKTO_HOST }}" >> $GITHUB_ENV
+          echo "KONDUKTO_TOKEN=${{ secrets.KONDUKTO_TOKEN }}" >> $GITHUB_ENV
+
+      - name: Build-Gradle
+        run: ./gradlew build
+      - name: import-SBOM&osv-scan
+        run: |
+          kdt sbom import -p kotlin-petclinic -b main -f kotlin-cyclone.json
+          kdt scan -p kotlin-petclinic -t osvscannersca -b main -f osv-scanner-result.json
+      
+      
