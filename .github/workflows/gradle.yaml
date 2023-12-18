@@ -19,10 +19,9 @@ jobs:
           distribution: 'temurin'
           cache: gradle
       
-      - name: Set up Gradle Wrapper& get syft
+      - name: Set up Gradle Wrapper& install Syft
         run: |
           chmod +x ./gradlew
-          ls ../
           curl -sSfL https://raw.githubusercontent.com/anchore/syft/main/install.sh | sh -s -- -b /usr/local/bin
       - name: Setup KDT
         run: |
@@ -30,7 +29,7 @@ jobs:
           echo "KONDUKTO_HOST=${{ secrets.KONDUKTO_HOST }}" >> $GITHUB_ENV
           echo "KONDUKTO_TOKEN=${{ secrets.KONDUKTO_TOKEN }}" >> $GITHUB_ENV
 
-      - name: Build-Gradle&GenerateSBOM-withSyft
+      - name: Build-Gradle & GenerateSBOM-withSyft
         run: |
           ./gradlew build
           syft ../sbom-gradle-cyclonedx-pipeline-scan -o cyclonedx-json --file kotlin-cyclonedx.json
