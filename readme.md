@@ -33,7 +33,7 @@ plugins {
     id("org.cyclonedx.bom") version "x.y.z"
 }
 ```
-*To view the CycloneDX plugins gradle, you can have a look at [this link](https://plugins.gradle.org/plugin/org.cyclonedx.bom).*
+*To check CycloneDX plugin on gradle, you can have a look at [this link](https://plugins.gradle.org/plugin/org.cyclonedx.bom).*
 
 ![CycloneDX Integration Example](/assets/cycloneDXplugin.png)
 
