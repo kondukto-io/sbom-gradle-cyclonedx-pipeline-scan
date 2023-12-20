@@ -36,14 +36,7 @@ jobs:
       - name: import-SBOM&osv-scan
         run: |
           
-          kdt scan 
-          -p kotlin-petclinic 
-          -t osvscannersca 
-          -b main 
-          -f osv-scanner-result.json
-          kdt sbom import 
-          -p kotlin-petclinic 
-          -b main 
-          -f kotlin-cyclonedx.json
+          kdt scan -p kotlin-petclinic -t osvscannersca -b main -f osv-scanner-result.json
+          kdt sbom import -p kotlin-petclinic -b main -f kotlin-cyclonedx.json
       
       
