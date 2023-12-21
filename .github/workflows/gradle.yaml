@@ -26,7 +26,8 @@ jobs:
           sudo apt update
           sudo apt install golang-go
           go version
-          /osv-scanner/scripts/build.sh
+          ls
+          ./osv-scanner/scripts/build.sh
           ./osv-scanner--help
       - name: Set-up-Gradle-Wrapper&osv-scanner
         run: |
