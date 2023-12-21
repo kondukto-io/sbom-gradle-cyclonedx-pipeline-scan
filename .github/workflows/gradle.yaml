@@ -18,11 +18,17 @@ jobs:
           java-version: '17'
           distribution: 'temurin'
           cache: gradle
-      
-      - name: Set-up-Gradle-Wrapper&osv-scanner
+      - name: update-software
         run: |
+          sudo apt update
+          sudo apt install software-properties-common
+          sudo add-apt-repository ppa:longsleep/golang-backports
+          sudo apt update
           sudo apt install golang-go
           go version
+      - name: Set-up-Gradle-Wrapper&osv-scanner
+        run: |
+          
           chmod +x ./gradlew
           go install github.com/google/osv-scanner/cmd/osv-scanner@v1
 
