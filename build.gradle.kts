@@ -24,8 +24,6 @@ val fontAwesomeVersion = "4.7.0"
 
 tasks.cyclonedxBom {
   setIncludeConfigs(listOf("runtimeClasspath"))
-  setSkipConfigs(listOf("compileClasspath", "testCompileClasspath"))
-  setSkipProjects(listOf(rootProject.name, "yourTestSubProject"))
   setProjectType("application")
   setSchemaVersion("1.4")
   setDestination(project.file("build/reports"))
