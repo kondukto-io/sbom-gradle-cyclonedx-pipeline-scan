@@ -38,7 +38,7 @@ jobs:
           echo " here cd dollar-PATH command "
           cd $GOPATH 
           echo " here ls bin command "
-          echo "/home/runner/go/bin" >> $GITHUB_PATH
+          echo "$(go env GOPATH)/bin" >> $GITHUB_PATH
           osv-scanner --help
           git clone https://github.com/google/osv-scanner.git
           ls
