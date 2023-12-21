@@ -37,7 +37,7 @@ jobs:
           gradle cyclonedxBom
       - name: scan-SBOM-with-osv-scanner
         run: |
-          osv-scanner -S bom.json --json --output sbom-scan.json
+          ./osv-scanner -S bom.json --json --output sbom-scan.json
       - name: import-generated-SBOM
         run: |
           kdt sbom import -p kotlin-petclinic -b main -f bom.json
