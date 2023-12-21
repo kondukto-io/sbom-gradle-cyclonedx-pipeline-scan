@@ -29,11 +29,16 @@ jobs:
       - name: osv-scanner
         run: |
           chmod +x ./gradlew
+          echo " here ls command "
           ls
+          echo " here go install osvscanner command "
           go install github.com/google/osv-scanner/cmd/osv-scanner@v1
+          echo " here go env command "
           go env 
+          echo " here cd dollar-PATH command "
           cd $GOPATH 
-          ls /bin
+          echo " here ls bin command "
+          ls bin
           osv-scanner --help
           git clone https://github.com/google/osv-scanner.git
           ls
