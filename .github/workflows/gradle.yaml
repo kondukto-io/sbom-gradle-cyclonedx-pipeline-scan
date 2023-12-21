@@ -22,8 +22,9 @@ jobs:
       - name: Set-up-Gradle-Wrapper&osv-scanner
         run: |
           chmod +x ./gradlew
-          sudo apt install git python3 python3-pip
-          sudo pip3 install osv-scanner
+          git clone https://github.com/google/osv-scanner.git
+          cd osv-scanner
+          sudo python3 setup.py install
       - name: Setup KDT
         run: |
           curl -sSL https://cli.kondukto.io | sh
