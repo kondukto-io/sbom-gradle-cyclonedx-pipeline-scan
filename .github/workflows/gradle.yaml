@@ -32,6 +32,9 @@ jobs:
       - name: Build-Gradle & GenerateSBOMwithcycloneDX Plugin
         run: |
           ./gradlew build
+          ls 
+          ls build
+          ls build/*
           syft ../sbom-gradle-cyclonedx-pipeline-scan -o cyclonedx-json --file kotlin-cyclonedx.json
       - name: import-SBOM&osv-scan
         run: |
