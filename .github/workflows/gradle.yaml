@@ -30,11 +30,13 @@ jobs:
         run: |
           chmod +x ./gradlew
           ls
-          ./osv-scanner/scripts/build.sh
-          ./osv-scanner--help
-          git clone https://github.com/google/osv-scanner.git
           go install github.com/google/osv-scanner/cmd/osv-scanner@v1
           osv-scanner --help
+          git clone https://github.com/google/osv-scanner.git
+          ls
+          ./osv-scanner/scripts/build.sh
+          ./osv-scanner--help
+
 
       - name: Setup KDT
         run: |
