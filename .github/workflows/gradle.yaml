@@ -34,11 +34,13 @@ jobs:
           ls
           echo " here go install osvscanner command "
           go install github.com/google/osv-scanner/cmd/osv-scanner@v1
-          echo " here go env command "
-          go env 
-          echo " here cd dollar-PATH command "
-          cd $GOPATH 
-          echo " here ls bin command "
+          go install github.com/google/osv-scanner@latest
+          if [ -f "$(go env GOPATH)/bin/osv-scanner" ]; then
+            echo "osv-scanner installed successfully."
+          else
+            echo "osv-scanner installation failed."
+            exit 1
+          fi
           echo "$(go env GOPATH)/bin" >> $GITHUB_PATH
           osv-scanner --help
           git clone https://github.com/google/osv-scanner.git
