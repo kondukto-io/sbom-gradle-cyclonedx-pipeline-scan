@@ -20,6 +20,7 @@ jobs:
           cache: gradle
       - name: update-software
         run: |
+          go version
           sudo apt update
           sudo apt install software-properties-common
           sudo add-apt-repository ppa:longsleep/golang-backports
