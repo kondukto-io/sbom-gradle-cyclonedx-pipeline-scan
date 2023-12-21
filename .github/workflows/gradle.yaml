@@ -32,7 +32,7 @@ jobs:
       - name: Build-Gradle & GenerateSBOMwithcycloneDX Plugin
         run: |
           ./gradlew build
-          ls build/*
+          ls 
           kdt sbom import -p kotlin-petclinic -b main -f build/reports/bom.json
           syft ../sbom-gradle-cyclonedx-pipeline-scan -o cyclonedx-json --file kotlin-cyclonedx.json
       - name: import-SBOM&osv-scan
