@@ -26,7 +26,7 @@ jobs:
         run: |
           wget https://github.com/google/osv-scanner/releases/download/v1.5.0/osv-scanner_1.5.0_linux_amd64 -O osv-scanner  && chmod +x osv-scanner
           chmod +x ./gradlew
-          chmod +x osv-scanner_1.5.0_linux_amd64          
+          chmod +x osv-scanner
       - name: Setup KDT
         run: |
           curl -sSL https://cli.kondukto.io | sh
