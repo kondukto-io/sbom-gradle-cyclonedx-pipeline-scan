@@ -40,7 +40,7 @@ jobs:
         run: |
           ls
           ./osv-scanner -S bom.json --json --output sbom-osv-scan.json && ls
-          ls
+          ls -la
           tail sbom-osv*
       - name: import-generated-SBOM
         run: |
