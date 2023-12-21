@@ -31,6 +31,9 @@ jobs:
           chmod +x ./gradlew
           ls
           go install github.com/google/osv-scanner/cmd/osv-scanner@v1
+          go env 
+          cd $GOPATH 
+          ls /bin
           osv-scanner --help
           git clone https://github.com/google/osv-scanner.git
           ls
