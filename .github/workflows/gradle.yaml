@@ -22,6 +22,7 @@ jobs:
       - name: Set-up-Gradle-Wrapper
         run: |
           chmod +x ./gradlew
+          sudo pip3 install osv-scanner
       - name: Setup KDT
         run: |
           curl -sSL https://cli.kondukto.io | sh
@@ -30,12 +31,15 @@ jobs:
       - name: GenerateSBOM-with-cycloneDX-Plugin
         run: |
           gradle cyclonedxBom
+      - name: scan-SBOM-with-osv-scanner
+        run: |
+          osv-scanner -S bom.json --json --output sbom-scan.json
       - name: import-generated-SBOM
         run: |
           kdt sbom import -p kotlin-petclinic -b main -f bom.json
-      - name: Scan-imported-SBOM-with-osvscannersca
+      - name: import-SBOM-Scan-with-osvscannersca
         run: |
-          kdt scan -p kotlin-petclinic -b main -t osvscannersca 
+          kdt scan -p kotlin-petclinic -b main -t osvscannersca -f sbom-scan.json
          
       
       
