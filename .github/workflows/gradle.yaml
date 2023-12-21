@@ -21,6 +21,8 @@ jobs:
       
       - name: Set-up-Gradle-Wrapper&osv-scanner
         run: |
+          sudo apt install golang-go
+          go version
           chmod +x ./gradlew
           go install github.com/google/osv-scanner/cmd/osv-scanner@v1
 
