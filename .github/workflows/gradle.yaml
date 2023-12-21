@@ -22,7 +22,6 @@ jobs:
       - name: Set up Gradle Wrapper& install Syft
         run: |
           chmod +x ./gradlew
-          curl -sSfL https://raw.githubusercontent.com/anchore/syft/main/install.sh | sh -s -- -b /usr/local/bin
       - name: Setup KDT
         run: |
           curl -sSL https://cli.kondukto.io | sh
@@ -34,10 +33,9 @@ jobs:
           gradle cyclonedxBom
           ls 
           kdt sbom import -p kotlin-petclinic -b main -f bom.json
-          syft ../sbom-gradle-cyclonedx-pipeline-scan -o cyclonedx-json --file kotlin-cyclonedx.json
-      - name: import-SBOM&osv-scan
+      - name: osv-scan&imported-SBOM
         run: |
-          
+          kdt scan -p kotlin-petclinic -b main -t osvscannersca 
           kdt scan -p kotlin-petclinic -t osvscannersca -b main -f osv-scanner-result.json
          
       
