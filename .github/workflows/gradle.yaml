@@ -18,15 +18,10 @@ jobs:
           java-version: '17'
           distribution: 'temurin'
           cache: gradle
-      - name: update-software
-        run: |
-          go version
-          sudo apt update
-          sudo apt install software-properties-common
-          sudo add-apt-repository ppa:longsleep/golang-backports
-          sudo apt update
-          sudo apt install golang-go
-          go version
+      - name: Set up Go
+        uses: actions/setup-go@v2
+        with:
+          go-version: '1.21'
       - name: osv-scanner
         run: |
           chmod +x ./gradlew
@@ -34,8 +29,6 @@ jobs:
           ls
           ./osv-scanner/scripts/build.sh
           ./osv-scanner--help
-
-
       - name: Setup KDT
         run: |
           curl -sSL https://cli.kondukto.io | sh
