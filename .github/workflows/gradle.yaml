@@ -33,7 +33,7 @@ jobs:
         run: |
           gradle cyclonedxBom
           ls 
-          kdt sbom import -p kotlin-petclinic -b main -f build/reports/bom.json
+          kdt sbom import -p kotlin-petclinic -b main -f bom.json
           syft ../sbom-gradle-cyclonedx-pipeline-scan -o cyclonedx-json --file kotlin-cyclonedx.json
       - name: import-SBOM&osv-scan
         run: |
