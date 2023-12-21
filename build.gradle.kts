@@ -26,7 +26,7 @@ tasks.cyclonedxBom {
   setIncludeConfigs(listOf("runtimeClasspath"))
   setProjectType("application")
   setSchemaVersion("1.4")
-  setDestination(project.file("build/reports"))
+  setDestination(project.file("build/../"))
   setOutputName("bom")
   setOutputFormat("json")
   setIncludeBomSerialNumber(false)
