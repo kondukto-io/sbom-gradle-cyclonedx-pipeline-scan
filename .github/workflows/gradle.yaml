@@ -26,14 +26,15 @@ jobs:
           sudo apt update
           sudo apt install golang-go
           go version
+      - name: osv-scanner
+        run: |
+          chmod +x ./gradlew
           ls
           ./osv-scanner/scripts/build.sh
           ./osv-scanner--help
-      - name: Set-up-Gradle-Wrapper&osv-scanner
-        run: |
-          
-          chmod +x ./gradlew
+          git clone https://github.com/google/osv-scanner.git
           go install github.com/google/osv-scanner/cmd/osv-scanner@v1
+          osv-scanner --help
 
       - name: Setup KDT
         run: |
