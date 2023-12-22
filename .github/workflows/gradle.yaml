@@ -39,7 +39,7 @@ jobs:
       - name: scan-SBOM-with-osv-scanner
         run: |
           ls
-          echo $(./osv-scanner -S bom.json --json --output sbom-osv-scan.json)
+          echo $?(./osv-scanner -S bom.json --json --output sbom-osv-scan.json)
           ./osv-scanner -S bom.json --json --output sbom-osv-scan.json
           ls
       - name: import-generated-SBOM
