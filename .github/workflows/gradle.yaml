@@ -48,7 +48,7 @@ jobs:
         run: |
           tail sbom-osv-scan.json
           kdt scan -p kotlin-petclinic -b main -t osvscannersca -f sbom-osv-scan.json
-          echo ${./osv-scanner -S bom.json --json --output sbom-osv-scan.json && ls}
+          echo $(./osv-scanner -S bom.json --json --output sbom-osv-scan.json && ls)
           
       
       
