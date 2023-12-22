@@ -41,14 +41,15 @@ jobs:
           ls
           ./osv-scanner -S bom.json --json --output sbom-osv-scan.json && ls
           ls -la
-          tail sbom-osv*
+          tail sbom-osv-scan.json
       - name: import-generated-SBOM
         run: |
           kdt sbom import -p kotlin-petclinic -b main -f bom.json
       - name: import-SBOM-Scan-with-osvscannersca
         run: |
-          tail sbom-osv*
+          tail sbom-osv-scan.json
           kdt scan -p kotlin-petclinic -b main -t osvscannersca -f sbom-osv-scan.json
+          echo $./osv-scanner -S bom.json --json --output sbom-osv-scan.json
           
       
       
