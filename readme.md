@@ -60,7 +60,7 @@ osv-scanner -S gradle-sbom.json --json --output result.json
 
 ## Importing SBOM and Scan Results into a Pipeline
 
-Kondukto, an application security coordination and orchestration tool, streamlines vulnerability management. Utilize Kondukto's kdt CLI tool to import vulnerabilities and scan results into your pipeline, thereby enhancing cybersecurity management efficiency. In this pipeline, we generate SBOM scan it within the pipeline using osv-scanner binary, and import SBOM and scan results one by one to the theKondukto using kdt.
+Kondukto, an application security orchestration and posture management platform, streamlines vulnerability management. Utilize Kondukto's kdt CLI tool to import vulnerabilities and scan results into your pipeline, thereby enhancing cybersecurity management efficiency. In this pipeline, we generate SBOM scan it within the pipeline using osv-scanner binary, and import SBOM and scan results one by one to the theKondukto using kdt.
 
 ![Pipeline Example](/assets/pipeline.png)
 
