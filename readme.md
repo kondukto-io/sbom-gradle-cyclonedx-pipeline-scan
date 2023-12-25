@@ -62,6 +62,6 @@ osv-scanner -S gradle-sbom.json --json --output result.json
 
 Kondukto, an application security coordination and orchestration tool, streamlines vulnerability management. Utilize Kondukto's kdt CLI tool to import vulnerabilities and scan results into your pipeline, thereby enhancing cybersecurity management efficiency.
 
-![Pipeline Example](/assets/pipeine.png)
+![Pipeline Example](/assets/pipeline.png)
 
 ---
