@@ -35,7 +35,7 @@ plugins {
 ```
 *To check CycloneDX plugin on gradle, you can have a look at [this link](https://plugins.gradle.org/plugin/org.cyclonedx.bom).*
 
-![CycloneDX Integration Example](/assets/cycloneDXplugin.png)
+![CycloneDX Integration Example](/assets/cycloneDplugin.png)
 
 
 ## Generating SBOM with Syft
