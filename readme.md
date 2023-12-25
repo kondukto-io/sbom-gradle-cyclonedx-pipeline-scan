@@ -35,7 +35,7 @@ plugins {
 ```
 *To check CycloneDX plugin on gradle, you can have a look at [this link](https://plugins.gradle.org/plugin/org.cyclonedx.bom).*
 
-![CycloneDX Integration Example](/assets/cycloneDXplugin.png)
+![CycloneDX Integration Example](/assets/cycloneDplugin.png)
 
 
 ## Generating SBOM with Syft
@@ -62,6 +62,6 @@ osv-scanner -S gradle-sbom.json --json --output result.json
 
 Kondukto, an application security coordination and orchestration tool, streamlines vulnerability management. Utilize Kondukto's kdt CLI tool to import vulnerabilities and scan results into your pipeline, thereby enhancing cybersecurity management efficiency.
 
-![Pipeline Example](/assets/pipeline.png)
+![Pipeline Example](/assets/pipelin.png)
 
 ---
