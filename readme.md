@@ -6,7 +6,7 @@ The Software Bill of Materials (SBOM) is essential in cybersecurity, offering de
 
 *For insights on SBOM with maven projects and its importance, refer to our [SBOM 101 blog](https://kondukto.io/blog/sbom-software-bill-of-materials).*
 
-CycloneDX is an open-source initiative that focuses on creating a standardized format for SBOMs, enhancing the security of software supply chains. It simplifies the process of generating SBOMs, allowing for a more thorough assessment of vulnerabilities in dependencies. This project demonstrates the use of CycloneDX with Gradle plugins to create SBOMs for a build.gradle.kts file.
+CycloneDX is an open-source initiative that focuses on creating a standardized format for SBOMs, enhancing the security of software supply chains. It simplifies the process of generating SBOMs, allowing for a more thorough assessment of vulnerabilities in dependencies. This project demonstrates the use of CycloneDX with Gradle plugins to create SBOMs for a build.gradle.kts and build.gradle files.
 
 *To view the related blog post for this repository, please visit [this link](https://kondukto.io/blog/how-to-generate-and-audit-sbom-in-a-ci-cd-pipeline).*
 
@@ -33,13 +33,16 @@ plugins {
     id("org.cyclonedx.bom") version "x.y.z"
 }
 ```
+
+After adding plugins, you can add/edit the tasks of plugins on the build process to generate the SBOMs accordingly on the customized target destination as shown in the following screenshots.
+
 *To check CycloneDX plugin on gradle, you can have a look at [this link](https://plugins.gradle.org/plugin/org.cyclonedx.bom).*
 
 ![CycloneDX KotlinIntegration Example](assets/pluginKotlin.png)
 ![CycloneDX JavaIntegration Example](assets/pluginJava.png)
 
 
-## Generating SBOM on build process
+## Generating SBOM on the build process
 
 After integrating CycloneDX, we use 'gradle cyclonedxBom' command to generate the SBOM:
 
@@ -47,7 +50,7 @@ After integrating CycloneDX, we use 'gradle cyclonedxBom' command to generate th
 gradle cyclonedxBom
 ```
 
-This command creates an SBOM in CycloneDX JSON format on the directory mentioned in the tasks of the plugin inside build.gradle.kts.
+This command creates an SBOM in CycloneDX JSON format on the directory mentioned in the tasks of the plugin inside build.gradle or build.gradle.kts.
 
 ## Scanning SBOM with osv-scanner
 
@@ -65,7 +68,7 @@ osv-scanner -S sbom.json --json --output result.json || true
 
 ## Importing SBOM and Scan Results into a Pipeline
 
-Kondukto, an Application Security Orchestration and Posture Management (ASPM) platform, streamlines vulnerability management. Utilize Kondukto's kdt CLI tool to import vulnerabilities and scan results into your pipeline, thereby enhancing cybersecurity management efficiency. In this pipeline, we generate SBOM scan it within the pipeline using osv-scanner binary, and import SBOM and scan results one by one to the the Kondukto using kdt. You can check the pipeline inside .github/workflows/build.yaml.
+Kondukto, an Application Security Orchestration and Posture Management (ASPM) platform, streamlines vulnerability management. Utilize Kondukto's kdt CLI tool to import vulnerabilities and scan results into your pipeline, thereby enhancing cybersecurity management efficiency. In this pipeline, we generate SBOM scan it within the pipeline using the osv-scanner binary, and import SBOM and scan results one by one to the the Kondukto using kdt. You can check the pipeline inside .github/workflows/build.yaml.
 
 ![Pipeline Example](/assets/pipeline.png)
 
