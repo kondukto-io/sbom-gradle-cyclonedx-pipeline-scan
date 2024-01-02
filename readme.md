@@ -54,14 +54,18 @@ This command creates an SBOM in CycloneDX JSON format on the directory mentioned
 OSV-scanner, a CLI tool, checks for open-source vulnerabilities in SBOM files. To scan your SBOM and find vulnerabilities, use:
 
 ```bash
-osv-scanner -S gradle-sbom.json --json --output result.json
+osv-scanner -S sbom.json --json --output result.json
 ```
+You should also keep in mind that if you find any vulnerabilities on your scan, the OSV scanner will have a return value of “1”. Using it in a pipeline, as a result of return 1, your pipeline will break. Therefore, if you want to use it without breaking the pipeline, following your osv scan, you can use the || true operand as shown in the following.
 
+```bash
+osv-scanner -S sbom.json --json --output result.json || true
+```
 
 
 ## Importing SBOM and Scan Results into a Pipeline
 
-Kondukto, an application security orchestration and posture management platform, streamlines vulnerability management. Utilize Kondukto's kdt CLI tool to import vulnerabilities and scan results into your pipeline, thereby enhancing cybersecurity management efficiency. In this pipeline, we generate SBOM scan it within the pipeline using osv-scanner binary, and import SBOM and scan results one by one to the theKondukto using kdt.
+Kondukto, an Application Security Orchestration and Posture Management (ASPM) platform, streamlines vulnerability management. Utilize Kondukto's kdt CLI tool to import vulnerabilities and scan results into your pipeline, thereby enhancing cybersecurity management efficiency. In this pipeline, we generate SBOM scan it within the pipeline using osv-scanner binary, and import SBOM and scan results one by one to the theKondukto using kdt.
 
 ![Pipeline Example](/assets/pipeline.png)
 
