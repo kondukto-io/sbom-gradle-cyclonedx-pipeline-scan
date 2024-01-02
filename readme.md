@@ -35,7 +35,8 @@ plugins {
 ```
 *To check CycloneDX plugin on gradle, you can have a look at [this link](https://plugins.gradle.org/plugin/org.cyclonedx.bom).*
 
-![CycloneDX Integration Example](assets/cycloneDXplugin.png)
+![CycloneDX KotlinIntegration Example](assets/pluginKotlin.png)
+![CycloneDX JavaIntegration Example](assets/pluginJava.png)
 
 
 ## Generating SBOM on build process
