@@ -36,7 +36,7 @@ plugins {
 
 After adding plugins, you can add/edit the tasks of plugins on the build process to generate the SBOMs accordingly on the customized target destination as shown in the following screenshots.
 
-*To check CycloneDX plugin on gradle, you can have a look at [this link](https://plugins.gradle.org/plugin/org.cyclonedx.bom).*
+*To check CycloneDX plugin on gradle, you can have a look at [this link](https://plugins.gradle.org/plugin/org.cyclonedx.bom). You can also achieve tasks to use on your build file [here](suggested-tasks-in-buildgradle.txt)*
 
 ![CycloneDX KotlinIntegration Example](assets/pluginKotlin.png)
 ![CycloneDX JavaIntegration Example](assets/pluginJava.png)
