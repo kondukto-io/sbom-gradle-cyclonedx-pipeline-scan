@@ -12,7 +12,7 @@ cyclonedxBom {
     schemaVersion = "1.5"
     // Boms destination directory. Defaults to 'build/reports'
     destination = file("build/reports")
-    // The file name for the generated BOMs (before the file format suffix). Defaults to 'bom'
+    // The file name for the generated BOMs (before the file format suffix). Defaults to 'SBOM'
     outputName = "SBOM"
     // The file format generated, can be xml, json or all for generating both. Defaults to 'all'
     outputFormat = "json"
